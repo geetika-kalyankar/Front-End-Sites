@@ -1,5 +1,5 @@
 
-# HTML-CSS-and-Tailwind-WebPages:
+# HTML-CSS WebPages:
 
 Project 1 - Credit Card Landing Page
 ## 📷 Screenshots:
