@@ -9,8 +9,9 @@
     <link rel="icon" type="image/x-icon" href="/assets/images/edit-brightness.svg">
     <title>Data Analytic Landing Page</title>
     <!-- CSS File -->
-    <link rel="stylesheet" href="/style.css">
+    
     <link rel="stylesheet" href="/disc/style.css">
+    <link rel="stylesheet" href="/src/input.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font family -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -19,11 +20,12 @@
 <body>
     <header>
         <div class=" flex justify-between py-4">
-            <div class="w-[30%] flex pl-[11%] items-center">
+            <div class="w-[30%] flex pl-4 lg:pl-[11%] items-center">
             <img src="/assets/images/Logo.png" alt="logo">
             </div>
-            <nav class="w-[70%] flex justify-center pl-[12%] gap-x-7    ">
-                <ul class=" flex items-center gap-x-6 ">
+            
+            <nav class=" lg:flex w-[70%] lg:justify-center lg:pl-[12%] lg:gap-x-9 hidden ">
+                <ul class=" flex items-center gap-x-6  ">
 
 
                     <li class="flex gap-x-0.5 hover:bg-violet-200 px-2 hover:rounded-2xl">
@@ -40,23 +42,23 @@
                         <a href="#" >Login</a>
                     </li>
                 </ul>
-    
+            
                 <button class="flex items-center py-[10px] px-9 text-[#722ED1] text-[17px] font-[500] rounded-full border-2 border-[#722ED1] hover:bg-[#722ED1] hover:text-[white]
                   ">Start free trial</button>
                 
-            </nav>
-
-            <div class="block">
-                <span>
-
-                </span><span></span><span></span>
-            </div>
+                </nav>
+            
+            <div class="block pr-4  lg:hidden">    
+            <img src="/assets/images/icons8-menu-50.png" alt="" class="h-9">
+        </div>
+            
+              
         </div>
     </header>
 
     <main>
         <section id="hero">
-            <div class=" relative flex justify-between lg:px-[11%]  lg:h-[100vh] bg-gradient-to-t from-[#accbee] to-[white] ">
+            <div class="clip-custom b-3 d-3 flex justify-between lg:px-[11%]  h-[105vh]">
                 <div class=" flex flex-col 
                             lg:pt-[10%] gap-6 lg:w-[46%] ">
                     <h3 class="flex items-center">
@@ -88,7 +90,7 @@
             </div>
         </section>
 
-        <div class=" ">
+        <div class="add ">
 
         </div>
 
@@ -200,13 +202,15 @@
             </div>
         </section>
 
-        <section class="bg-[#F0E2FF] h-[100vh] ">
+        <section class="clip-second bg-[#F0E2FF] h-[100vh] ">
             <div class="px-[11%]">
-                <div class="pt-[6rem] ">
-                    <h4 class=" text-center text-[21px] font-bold">
-                        "What I love about SullivanAnalytics is the easy way we can collaborate even if there is a lot
-                        g-of people involved in the process"
-                    </h4>
+                <div class="pt-[9rem]  ">
+                    <div class="flex justify-center">
+                        <h4 class=" text-center text-[21px] font-bold w-[70%]">
+                            "What I love about SullivanAnalytics is the easy way we can collaborate even if there is a lot
+                            g-of people involved in the process"
+                        </h4>
+                    </div>
                     <div class="flex justify-center pt-6 pb-5">
                         <img src="/assets/images/Profile.png" alt="Profile">
                     </div>
