@@ -18,7 +18,7 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 <hr>
 
 ## ▶️ Live Project Link:
-[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://credit-cards-landing-page.netlify.app/)
+[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://credit-card-landing-page-geetika.netlify.app/)
 
 <hr>
 
@@ -26,19 +26,19 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 
 ### Desktop View:
 
-![image](https://github.com/vitthal-korvan/Credit-Card-Landing-Page/blob/main/assets/ScreenShots/desktop_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/desktop.png)
 
 <hr>
 
 ### Medium Screen Tablet View:
 
-![image](https://github.com/vitthal-korvan/Credit-Card-Landing-Page/blob/main/assets/ScreenShots/tablet_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/tabPhoto.png)
 
 <hr>
 
 ### Mobile View:
 
-![image](https://github.com/vitthal-korvan/Credit-Card-Landing-Page/blob/main/assets/ScreenShots/mobile_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/mobilePhoto.png)
 
 <hr>
 
