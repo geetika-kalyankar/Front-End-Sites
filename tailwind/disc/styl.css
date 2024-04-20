@@ -747,6 +747,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -821,11 +825,6 @@ video {
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
-}
-
-.rounded-s-lg {
-  border-start-start-radius: 0.5rem;
-  border-end-start-radius: 0.5rem;
 }
 
 .border-2 {
@@ -974,10 +973,6 @@ video {
   padding-left: 1px;
 }
 
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
@@ -1018,8 +1013,20 @@ video {
   padding-top: 9rem;
 }
 
+.pt-\[\] {
+  padding-top: ;
+}
+
+.pt-\[5\%\] {
+  padding-top: 5%;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-\[\'Roboto\'\] {
+  font-family: 'Roboto';
 }
 
 .font-\[\'poppins\'\] {
