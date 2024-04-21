@@ -8,13 +8,16 @@
 @layer base{
     .clip-custom{
         clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%);
-        background: linear-gradient(170deg, #FEFEFF 50%, #9DD0FF 100%);
+        background: linear-gradient(180deg, #FEFEFF 50%, #9DD0FF 100%);
     }
     .clip-second{
         clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%);
     }
     p{
         opacity: 0.6;
+    }
+    .name, .position{
+        font-size: 20px;
     }
     .list li{
         opacity: 0.6;
