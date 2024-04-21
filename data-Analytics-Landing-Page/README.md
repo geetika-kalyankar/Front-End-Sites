@@ -9,12 +9,16 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 
 ## ⚙️ What did I learn by making this project?
 
--  learn CSS tailwind css.
+-   learn CSS postioning in detail.
+-   learn CSS Flexbox. 
+-   learn to use CSS variables
+-   learn CSS hover effect.
+-   learn using psudo element :: after and ::before.
 
 <hr>
 
 ## ▶️ Live Project Link:
-[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://data-analytic-landing-page-geetika.netlify.app/)
+[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://data-analytic-landing-pages.netlify.app/)
 
 <hr>
 
