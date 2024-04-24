@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --Robot-: "Roboto", sans-serif;
+    --Poppins-: "Poppins", sans-serif;
+    --font-1: 51px;
+    --font-2: 19px;
+    --primary-color: #6663E9;
+    --second-color: #FFFFFF;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+h2{
+    text-align: center;
+    font-family: var(--Poppins-);
+    font-size: var(--font-1);
+    font-weight: 700;
+}
+h4{
+    font-size: var(--font-2);
+    font-weight: 400;
+}
+h3{
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-top: 5px;
+    font-family: var(--Poppins-);
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    border: 2px solid var(--bgp);
+
+}
+button{
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 2rem;
+    border: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btn-primary:hover{
+    background-color: var(--second-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--Robot-);
+
+}
+/* ------Navigation section------ */
+.max-width{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+header{
+    position: absolute;
+    width: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 ;
+}
+header nav img, ul{
+    padding: 0 1.5rem;
+} 
+nav img{
+   width: 110px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+nav ul li{
+    font-size: 18px;
+    color: rgb(209, 209, 209);
+    list-style-type: none;
+}
+nav .ham-menu{
+    display: none;
+}
+/* -----First main section------ */
+.hero{
+    background-image: linear-gradient(to top, rgba(20, 20, 20, 0.247), rgba(20, 20, 20, 0.616)), url(./assets/Photos/mainBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.hero .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+.hero .container h1{
+    font-family: var(--Poppins-);
+    color: var(--second-color);
+    font-size: 64px;
+    font-weight: 700;
+}
+.hero .container p{
+    font-size: var(--font-2);
+    color: #D1D1D1;
+    width: 30%;
+    font-size: 16px;
+    line-height: 26px;
+}
+.hero .container button{
+  margin-top: 10px;
+   
+   
+}
+.hero button{
+    width: max-content;
+}
+/* -----Logo section----- */
+.logos{ 
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;    
+}
+.logos .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding: 3rem 1rem;
+}
+.logos .container img{
+    width: 130px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+.logos .container img:hover{
+    scale: 1.08; 
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* -----Property sample section----- */
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+
+.locations .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+    row-gap: 6rem;
+    margin-top: 4rem;
+}
+
+.locations .container .items{
+    width: 25vw;
+    height: 55vh;
+    background-size: cover;
+    border-radius: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.items .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    background-color: #FFFFFF;
+    padding: 0.7rem 1.3rem;
+    position: absolute;
+    bottom: -2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;   
+}
+
+.items-1{
+    background-image: url(./assets/Photos/cardImage1.png);  
+}
+.items-2{
+    background-image: url(./assets/Photos/cardImage2.png);    
+}
+.items-3{
+    background-image: url(./assets/Photos/cardImage3.png);
+}
+.items-4{
+    background-image: url(./assets/Photos/cardImage4.png);  
+}
+.items-5{
+    background-image: url(./assets/Photos/cardImage5.png);
+}
+.items-6{
+    background-image: url(./assets/Photos/cardImage6.png);
+}
+.items-7{
+    background-image: url(./assets/Photos/cardImage7.png);
+}
+.items-8{
+    background-image: url(./assets/Photos/cardImage8.png);
+}
+.items-9{
+    background-image: url(./assets/Photos/cardImage9.png);
+}
+.blogs{
+    display: flex;
+    padding-top: 10rem;
+}
+.blogs .image{
+    width: 40vw;
+    
+}
+
+/* ----- Tab Responsive ------ */
+ @media (max-width:840px){
+    .locations .container .items{
+        width: 45vw;
+        height: 30vh;    
+    }
+} 
+
+
+/* ---- Mobile Responsive ----- */
+@media (max-width:440px) {
+    
+    nav ul{
+        display: none;
+    }
+    nav .ham-menu{
+        display: block;
+    }
+    nav .ham-menu img{
+        height: 48px;
+        width: 48px;
+    }
+    header nav{
+        padding: 0.5rem 1rem;
+    }
+    header nav img, ul{
+        padding: 0;
+    }
+    /* -------First main section------- */
+    .hero .container h1{
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    .hero .container p{
+        width: 100%;
+    }
+    /* property section  */
+    .heading h2{
+        font-size: 32px;
+    }
+    .locations .container .items{
+        width: 90vw;
+        height: 30vh;
+       
+       
+    }
+}
+
+
