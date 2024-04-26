@@ -2,24 +2,6 @@
 # HTML-CSS WebPages:
 
 Project 1 - Credit Card Landing Page
-## 📷 Screenshots:
-
-### Mobile:
-![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/mobilePhoto.png)
-
-### Desktop:
-![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/desktop.png)
-
-### Tab:
-![image](https://github.com/geetika-kalyankar/Front-End-Sites-main-/blob/main/Credit-Card-Landing-Page/Output/tabPhoto.png)
-
-[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://credit-card-landing-page-geetika.netlify.app/)
-
-
-
-
-
-
 Project 2 - Hosting Site Landing Page
 Project 3 - Gaming Landing Page
 Project 4 - Real Estate Landing Page
