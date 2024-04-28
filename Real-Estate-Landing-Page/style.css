@@ -16,14 +16,19 @@
     background-color: var(--primary-color);
     border-radius: 1rem;
 }
+::placeholder { 
+    color: #D1D1D1;
+    font-size: 1rem;
+    font-family: var(--Poppins-);
+    font-weight: 400;
+  }
 p{
     font-size: 16px;
     line-height: 27px;
-    opacity: 0.5;
+   
     font-weight: 500;
 }
-h2{
-    text-align: center;
+h2{  
     font-family: var(--Poppins-);
     font-size: var(--font-1);
     font-weight: 700;
@@ -50,8 +55,8 @@ button{
     border-radius: 2rem;
     border: none;
     font-size: 18px;
-    color: #FFFFFF;
     width: max-content;
+    font-family: var(--Poppins-);
     transition: all 0.5s ease-in-out;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -59,6 +64,10 @@ button{
     background-color: var(--second-color);
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
+}
+li{
+    list-style-type: none;
+    font-weight: 500;
 }
 *{
     margin: 0;
@@ -81,8 +90,11 @@ header nav{
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 ;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+   
 }
-header nav img, ul{
+header nav img, header nav ul{
     padding: 0 1.5rem;
 } 
 nav img{
@@ -95,8 +107,9 @@ nav ul{
 }
 nav ul li{
     font-size: 18px;
-    color: rgb(209, 209, 209);
+    color: #D1D1D1;
     list-style-type: none;
+    font-weight: 400;
 }
 nav .ham-menu{
     display: none;
@@ -126,6 +139,7 @@ nav .ham-menu{
     color: var(--second-color);
     font-size: 64px;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 .hero .container p{
     font-size: var(--font-2);
@@ -133,6 +147,7 @@ nav .ham-menu{
     width: 30%;
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 0.5rem;
 }
 .hero .container button{
   margin-top: 10px;
@@ -171,7 +186,10 @@ img{
 .heading{
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
+}
+.locations .heading h2{
+    text-align: center;
     margin-top: 5.5rem;
 }
 
@@ -235,64 +253,80 @@ img{
 .items-9{
     background-image: url(./assets/Photos/cardImage9.png);
 }
-
+/* ------Early booking section------ */
 
 .blogs{
+    margin-top: 6rem;
     display: flex;
     align-items: center;
-    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
     height: 100%;
-    margin-top: 10rem;
-    gap: 2rem; 
-  
+    /* padding-inline: 1rem; */
 }
+
 .blogs .image{
     width: 100%;
     height: 400px;
     position: relative;
 }
+
+
+.f-img{
+    z-index: 2;
+    max-width: 800px;
+    border-radius: 1rem;
+    height: 400px;
+    margin-inline: auto;
+}
+
+
+.blogs .text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 4rem;
+}
+
+.blogs p{
+    max-width: 400px;
+}
+
 .blogs .image img:first-child{
+    display: block;
     position: absolute;
-    width: 48vw;
-    height: 60vh;
     top: 2.5rem;
     left: 0;
     z-index: -1;
 }
+
 .blogs .image .f-img{
-    position: absolute;
-    width: 28vw;
-    height: 60vh;
-    left: 9rem;
-    border-radius: 2rem;
-}
-.blogs .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    text-align: left;
-    gap: 1rem;
-    width: 100%;
-}
-.text h2{
-    text-align: left;
-}
-.text p{
-    width: 50%;
+    width: 400px;
+    margin-left: 10rem;
 }
 
-.blogs-2 .image{
-    order: 2;
+
+.text h4{
+    text-align: left;
+}
+.blogs-2{
+    display: flex;
+    flex-direction: row-reverse;
 }
 /* ------Contact me Section----- */
 .subscribe-news{
-    margin: 10rem 0;
+    margin-top: 10rem;
+    padding: 1rem;
 }
 .subscribe-news .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color:var(--primary-color); 
+    border-radius: 2rem;
+    padding: 4rem 1rem;
+    gap: 2rem;
 }
 .subscribe-news .container .heading{
     display: flex;
@@ -301,22 +335,103 @@ img{
     gap: 1rem;
     color: var(--second-color);
 }
+.subscribe-news .container .heading h2{
+    text-align: center;
+}
 .subscribe-news .container .heading p{
-    width: 32%;
+    width: 33%;
     text-align: center;
     color: #FFFFFF;
+    font-weight: 400;
 }
 .subscribe-news .container .form{
     display: flex;
     justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 .form .email{
     display: flex;
-    width: 35%;
+    align-items: center;
+    width: 32%;
     background-color: #5654D1;
+    position: relative;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+}
+.subscribe-news .container .email input{
+    outline: none;
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    left: 3.5rem;
+    background-color: transparent;
+    border: none;
+}
+.btn-secondary{
+    color: var(--primary-color);
+    font-family: var(--Poppins-);
+}
+.btn-secondary:hover{
+    background-color: var(--primary-color);
+    color: var(--second-color);
 }
 
-
+/* ----Footer Section---- */
+footer{
+   display: flex;
+   padding: 1rem;
+   gap: 2rem;
+   margin-top: 6rem;
+   flex-wrap: wrap;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    justify-content: left;
+}
+.company .logo{ 
+ width: 33%;  
+ height: 60%;
+}
+.company .social{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: left;
+}
+.company span{
+    width: 40%;
+    font-weight: 500;
+    line-height: 27px;
+}
+.links{
+    display: flex;
+    gap: 8rem;
+    width: 30%;
+}
+.links .link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40%;
+}
+.links .link-list h4{
+    font-family: var(--Poppins-);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: var(--font-2);
+}
+.link-list li{
+    opacity: 0.7;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 
 
 /* ----- Tab Responsive ------ */
@@ -325,12 +440,50 @@ img{
         width: 45vw;
         height: 30vh;    
     }
+    .form .email{
+        width: 40%;
+    }
+    .subscribe-news .container .heading p{
+        width: 55%;
+    }
+    /* offer section */
+    .blogs{
+        padding: 1rem;
+    }
+    .blogs .image img:first-child{
+        display: none;
+    }
+    .blogs .text{
+        margin-left: 0;
+    }
+    .blogs .image .f-img{
+
+        margin-left: 0;
+    }
+    .subscribe-news{
+        margin-top: 3rem;
+    }
+    
+    /* Footer */
+    .company{
+        width: 45%;
+    }
+    .company .logo{ 
+        width: 55%;
+    }
+    .links .link-list{
+        width: 10%;
+    }
+    .company span{
+        width: 70%;
+    }
 } 
-
-
 /* ---- Mobile Responsive ----- */
 @media (max-width:440px) {
-    
+    body{
+        overflow-x: hidden;
+    }
+
     nav ul{
         display: none;
     }
@@ -342,7 +495,7 @@ img{
         width: 48px;
     }
     header nav{
-        padding: 0.5rem 1rem;
+        padding: 1rem 1rem;
     }
     header nav img, ul{
         padding: 0;
@@ -351,9 +504,11 @@ img{
     .hero .container h1{
         font-size: 2.5rem;
         width: 100%;
+        margin-bottom: 0;
     }
     .hero .container p{
         width: 100%;
+        margin-bottom: 0;
     }
     /* property section  */
     .heading h2{
@@ -362,8 +517,66 @@ img{
     .locations .container .items{
         width: 90vw;
         height: 30vh;
-       
-       
+    }
+    /* offer section */
+    .blogs{
+        flex-direction: column;
+        padding: 1rem; 
+        margin-top: 3rem;
+    }
+    .blogs .image img:first-child{
+        display: none;
+    }
+    .blogs .image .f-img{
+        width: 92vw;
+        margin-left: 0;
+    }
+    .blogs .text{
+        margin-left: 0;
+    }
+    .blogs .text h2{
+        font-size: 30px;
+    }
+    .blogs .btn-primary{
+        width: 100%;
+
+    }
+
+
+    /* Subscribe section */
+    .subscribe-news{
+        margin-top: 3rem;
+    }
+    .subscribe-news .container .heading p{
+        width: 90%;
+    }
+    .form .email{
+        width: 100%;
+    }
+    .btn-secondary{
+        width: 100%;
+    }
+    /* Footer */
+    footer{
+        margin-top: 2.5rem;
+    }
+    .company .logo{ 
+        width: 55%;
+    }
+    .company{
+        width: 100%;
+    }
+    .company span{
+        width: 70%;
+    }
+  
+    .links{
+        width: 100%;
+        flex-wrap: wrap; 
+        gap: 2rem;
+    }
+    .links .link-list{
+        width: 40%;
     }
 }
 
