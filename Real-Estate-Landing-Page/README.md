@@ -13,7 +13,6 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 -   learn CSS Flexbox. 
 -   learn to use CSS variables
 -   learn CSS hover effect.
--   learn using psudo element :: after and ::before.
 
 <hr>
 
@@ -26,18 +25,18 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 
 ### Desktop View:
 
-![image](https://github.com/vitthal-korvan/Real-Estate-Landing-Page/blob/main/assets/Screenshots/destop_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Real-Estate-Landing-Page/Screenshot/Desktop.png)
 
 <hr>
 
 ### Medium Screen / Tablet View:
 
-![image](https://github.com/vitthal-korvan/Real-Estate-Landing-Page/blob/main/assets/Screenshots/tablet_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Real-Estate-Landing-Page/Screenshot/Tab.png)
 
 <hr>
 
 ### Mobile View:
 
-![image](https://github.com/vitthal-korvan/Real-Estate-Landing-Page/blob/main/assets/Screenshots/mobile_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Real-Estate-Landing-Page/Screenshot/Mobile.png)
 
 
