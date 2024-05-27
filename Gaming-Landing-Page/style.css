@@ -7,11 +7,20 @@
     --orange-: #F4694C;
     --Grey-: #AAAAAA;
 }
-*{
-    padding: 0;
-    margin: 0;
+html{
+    scroll-behavior: smooth;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+.mb-4{
+    margin-block: 3rem;
+}
 .max-width{
     max-width: 1200px;
     margin-inline: auto;
@@ -25,6 +34,9 @@ a{
     font-weight: 500;
     color: rgb(170, 170, 170);
 }
+a:hover{
+    color:#fff;
+}
 img{
     
     object-fit: cover;
@@ -36,11 +48,12 @@ button{
     border: none;
     background-color: var(--orange-);
     color: white;
-    width: max-content;
+   
 }
 h1{
     font-size: 64px;
     font-family: var(--poppins-);
+    text-transform: capitalize;
 }
 h2{
     font-family: var(--poppins-);
@@ -60,6 +73,9 @@ li{
     color: var(--Grey-);
     font-family: var(--roboto-);
 }
+li:hover{
+    color: #fff;
+}
 p{
     color:  #AAAAAA;
     font-family: var(--roboto-);
@@ -68,6 +84,20 @@ p{
 span{
     font-family: var(--roboto-);
     color: var(--orange-);
+}
+.btn-primary{
+    border: 2px solid var(--orange-);
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: var(--orange-);
+}
+.btn-secondary{
+    background-color: transparent;
+    border: 2px solid ;
+}
+.btn-secondary:hover{
+    background-color: var(--orange-);
 }
 
 /* !-----Header Section-----! */
@@ -84,13 +114,13 @@ header{
     align-items: center;
 }
 .sec{
-    gap: 6rem;
+    gap: 5.2rem;
 }
 .sec img{
     width: 120px;
 }
 .nav{
-    gap: 3rem;
+    gap: 2rem;
 }
 .header .nav-btn{
     gap: 1rem;
@@ -123,10 +153,7 @@ header{
     display: flex;
     gap: 1rem;
 }
-.hero .container .left .btns-groups .btn-secondary, .explore .container .btns-groups .btn-secondary{
-    background-color: transparent;
-    border: 2px solid ;
-}
+
 .left h1{
     color: #fff;
 }
@@ -137,8 +164,15 @@ header{
 .right{
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 7rem;
 }
+.hero .right div:first-child{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
 .right div h3{
     color: #ffff;
 }
@@ -147,7 +181,7 @@ header{
 }
 /* !-----Product Cart-----! */
 .popular-games{
-    padding: 6rem 0;
+    padding: 3rem 1rem;
 }
 .popular-games .container{
     display: flex;
@@ -196,6 +230,24 @@ header{
     left: 0;
     width: 100%;
     white-space: nowrap;
+    padding: 1rem;
+}
+.items-description .text p{
+    color: #fff
+}
+.items-description .text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.stars img{
+    width: 20px;
 }
 /* !----Banner Section----! */
 .explore{
@@ -227,6 +279,9 @@ header{
 }
 .explore .container .btns-groups .btn-secondary{
     color: var(--orange-) ;
+}
+.explore .container .btns-groups .btn-secondary:hover{
+    color: white;
 }
 /* !-----Game Recommendetion-----! */
 .game-week .container, .game-week .heading{
@@ -351,6 +406,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 .banner .container h2{
     color: #fff;
