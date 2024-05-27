@@ -18,7 +18,7 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 <hr>
 
 ## ▶️ Live Project Link:
-[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://beat-landing-page.netlify.app/)
+[<img src= "https://img.shields.io/badge/PROJCET LINK-1DA55F?style=for-the-badge&logo=&logoColor=white" />](https://beats-landing-page-geetika.netlify.app/)
 
 <hr>
 
@@ -26,19 +26,19 @@ This project is created using HTML and CSS. I have used CSS Positioning to build
 
 ### Desktop View:
 
-![image](https://github.com/vitthal-korvan/Beats-Landing-Page/blob/main/Assets/Screenshots/desktop_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Beats-Landing-Page/screenshot/Desktop.png)
 
 <hr>
 
 ### Medium Screen / Tablet View:
 
-![image](https://github.com/vitthal-korvan/Beats-Landing-Page/blob/main/Assets/Screenshots/tablet_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Beats-Landing-Page/screenshot/Tab.png)
 
 <hr>
 
 ### Mobile View:
 
-![image](https://github.com/vitthal-korvan/Beats-Landing-Page/blob/main/Assets/Screenshots/mobile_view.png)
+![image](https://github.com/geetika-kalyankar/Front-End-Sites/blob/main/Beats-Landing-Page/screenshot/Mobile.png)
 
 
 
