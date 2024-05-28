@@ -6,6 +6,7 @@
     --poppins-: "Poppins", sans-serif;
     --orange-: #F4694C;
     --Grey-: #AAAAAA;
+    --white-: #fff;
 }
 html{
     scroll-behavior: smooth;
@@ -35,7 +36,7 @@ a{
     color: rgb(170, 170, 170);
 }
 a:hover{
-    color:#fff;
+    color:var(--white-);
 }
 img{
     
@@ -47,7 +48,7 @@ button{
     font-size: 16px;
     border: none;
     background-color: var(--orange-);
-    color: white;
+    color: var(--white-);
    
 }
 h1{
@@ -65,7 +66,7 @@ h3{
     font-size: 20px;
 }
 h4{
-    color: #fff;
+    color: var(--white-);
     font-family: var(--poppins-);
     font-weight: 400;
 }
@@ -74,7 +75,7 @@ li{
     font-family: var(--roboto-);
 }
 li:hover{
-    color: #fff;
+    color: var(--white-);
 }
 p{
     color:  #AAAAAA;
@@ -89,7 +90,7 @@ span{
     border: 2px solid var(--orange-);
 }
 .btn-primary:hover{
-    background-color: #fff;
+    background-color: var(--white-);
     color: var(--orange-);
 }
 .btn-secondary{
@@ -102,8 +103,11 @@ span{
 
 /* !-----Header Section-----! */
 header{
+    height: 100%;
     width: 100%;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 .header{
     padding: 1rem;
@@ -122,6 +126,9 @@ header{
 .nav{
     gap: 2rem;
 }
+.nav-btn a{
+    display: block;
+}
 .header .nav-btn{
     gap: 1rem;
 
@@ -137,12 +144,15 @@ header{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+   
 }
 .hero .container{
     width: 100%;
     display: flex;
     align-items: center;
     padding: 1rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
 }
 .hero .container .left{
     display: flex;
@@ -155,7 +165,7 @@ header{
 }
 
 .left h1{
-    color: #fff;
+    color: var(--white-);
 }
 .left p{
     color: rgb(170, 170, 170);
@@ -174,7 +184,7 @@ header{
 }
 
 .right div h3{
-    color: #ffff;
+    color: var(--white-);
 }
 .right div img{
     width: 120px;
@@ -224,7 +234,7 @@ header{
     gap: 1rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    color: #ffff;
+    color: var(--white-);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -233,7 +243,7 @@ header{
     padding: 1rem;
 }
 .items-description .text p{
-    color: #fff
+    color: var(--white-);
 }
 .items-description .text{
     display: flex;
@@ -281,7 +291,7 @@ header{
     color: var(--orange-) ;
 }
 .explore .container .btns-groups .btn-secondary:hover{
-    color: white;
+    color: var(--white-);
 }
 /* !-----Game Recommendetion-----! */
 .game-week .container, .game-week .heading{
@@ -339,7 +349,7 @@ header{
     padding: 1rem;
 }
 .game-most .container .heading{
-    color: white;
+    color: var(--white-);
     padding: 5rem 1rem;
 }
 .game-most .container .main{
@@ -409,13 +419,13 @@ header{
     gap: 1rem;
 }
 .banner .container h2{
-    color: #fff;
+    color: var(--white-);
 }
 /* !----Footer Section-----! */
 .footer{
     display: flex;
     padding: 6rem 0;
-    justify-content: space-around;
+    gap: 6rem;
 }
 .company{
     width: 25%;
@@ -435,9 +445,161 @@ header{
 }
 /* !----Copyright----! */
 .copyright{
-    color: white;
+    color: var(--white-);
     font-family: var(--roboto-);
     text-align: center;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--white-);
     padding: 1rem 0;
+}
+@media (max-width:840px) {
+    .nav{
+        display: none;
+    }
+    .hero .container{
+        margin-top: 1rem;
+        gap:5rem;
+        justify-content: center;
+    }
+    .right{
+        gap: 3rem;
+    }
+    .right div img{
+        width: 160px !important;
+    }
+    .popular-games .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+    }
+    .explore .container{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .game-week .container .items img {
+        width: 180px;
+    }
+    .main .bg-2{
+        left: 10rem;
+    }
+    .main p{
+        left: 19rem;
+        background-color: black;
+        padding: 10px;
+    }
+    .main .game{
+        display: none;
+    }
+    .footer{
+        gap:4rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 3rem;
+        padding: 3rem 0;
+    }
+    .company{
+        width: 100%;
+    }
+    .copyright{
+        padding: 2rem 0;
+    }
+}
+@media (max-width:440px) {
+    h1{
+        font-size: 2.2rem !important;
+    }
+    h2{
+        font-size: 1.8rem !important;
+    }
+    .mb-4{
+        margin-block: 0;
+    }
+    .nav{
+        display: none;   
+    }
+    .nav-btn a{
+        display: none;
+    }
+    .hero{
+        flex-wrap: wrap;
+    }
+   .hero .container{
+    margin-top: 6rem;
+    gap: 3rem;
+   }
+   .left p{
+    width: 100%;
+    }
+    .right div img{
+        width: 120px !important;
+    }
+    .btns-groups{
+        flex-direction: column;
+    }
+    .btns-groups button{
+        width: max-content;
+    }
+    .hero .container{
+        justify-content: center;
+    }
+    .right{
+        gap: 3rem;
+        margin-bottom: 3rem;
+    }
+    .hero .right div:first-child{
+        display: flex;
+        justify-content: center;
+    }
+    .popular-games .container{
+       flex-wrap: wrap;
+       grid-template-columns: 1fr;
+    }
+    .items .items-description{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .items .items-description button{
+        padding: 10px 15px;
+    }
+    .explore .container{
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .explore .container .left{
+        height: 500px;
+    }
+    .explore .container .right .btns-groups button{
+        width: 100%;
+    }
+    .game-week .heading{
+        flex-wrap: wrap;
+        margin-top: 0;
+        gap: 1rem;
+    }
+    .game-week .container{
+        grid-template-columns: 1fr;
+        margin-bottom: 3rem;
+    }
+    .game-week .container .items{
+        flex-wrap: wrap;
+    }
+    .game-week .container .items img{
+        width: 100%;
+    }
+    .game-most{
+        display: none;
+    }
+    .footer{
+        padding: 2rem 0;
+        flex-wrap:  wrap;
+        gap: 6rem;
+        row-gap: 3rem;
+    }
+    .company{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
 }
