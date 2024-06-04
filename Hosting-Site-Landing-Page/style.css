@@ -6,7 +6,7 @@
     --blue-: #0C8BFD;
     --white-: #FFFFFF;
     --black-: #111010;
-    --grey-: #898869;
+    --grey-: #898888;
     --darkgrey-: #292828;
     --h1-first-: 64px;
     --h1-second-: 48px;
@@ -63,12 +63,16 @@
     background-color: var(--blue-);
     color: var(--white-);
 }
+img{
+    object-fit: cover;
+}
 /* !----Header Section----! */
 header{
     padding: 1rem;
     top: 0;
     background-color: var(--black-);
     position: sticky;
+    z-index: 31;
 }
 .header{
     display: flex;
@@ -85,6 +89,7 @@ a{
 .navlinks{
     display: flex;
     gap: 1.6rem;
+    z-index: 3;
 }
 .navlinks li a{
     color: var(--grey-);
@@ -158,6 +163,7 @@ li{
 .company-logo .container{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .company-logo .container img{
     width: 140px;
@@ -169,6 +175,7 @@ li{
     align-items: center;
     gap: 2rem;
     margin-top: 6rem;
+    padding: 1rem;
 }
 .service .heading h1{
     font-size: var(--h1-second-);
@@ -183,6 +190,7 @@ li{
     display: flex;
     gap: 2rem;
     margin-bottom: 4rem;
+    padding: 1rem;
 }
 .service .container .items:nth-child(2){
     margin-top: 3rem;
@@ -199,12 +207,18 @@ li{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: max-content;
+    max-width: 500px;
     height: 380px;
     padding: 1rem;
     border-radius: 2rem;
-    gap: 2rem; 
+    gap: 2rem;
+    cursor: pointer;
+    transition: 1s ease-in-out;
 }
+.service .container .items:hover {
+    background-color: var(--black-);
+    color: var(--white-);
+  }
 .service .container .items h1{
     font-size: var(--h1-thrid-);
 }
@@ -241,6 +255,10 @@ li{
     font-size: var(--span-first-);
     font-weight: 500;
     border: 1.5px solid var(--black-);
+    transition: all .2s ease-in-out;
+}
+.features .container .list-1 li:hover{
+    transform: scale(1.01);
 }
 .list-1 li:first-child{
     background-color: var(--blue-);
@@ -270,8 +288,35 @@ li{
     align-items: center;
     background-color: var(--darkgrey-);
     height: 3rem;
-    padding: 1rem;
+    gap: 1rem;
+    padding: 1rem 2rem;
     border-radius: 2rem;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+}
+.features .container .list-2 li span {
+    margin-left: 1rem;
+}
+.features .container .list-2 li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    translate: 0 -50%;
+    width: 20px;
+    aspect-ratio: 1;
+    background-color: var(--white-);
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+.features .container .list-2 li:hover{
+    background-color: var(--white-);
+    color: var(--black-);
+}
+
+.features .container .list-2 li:hover::before{
+    background-color: var(--black-);
 }
 /* !----Price Section-----! */
 .price{
@@ -286,7 +331,6 @@ li{
 .price .container{
     display: flex;
     gap: 3rem;
-    padding: 1rem;
     margin-top: 3rem;
 }
 .price .container .item{
@@ -428,7 +472,7 @@ li{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    padding-top: 7rem;
+    padding: 7rem 1rem 0 1rem;
 }
 .contact .container .heading {
     display: flex;
@@ -443,12 +487,11 @@ li{
 .contact .container form{
     width: 100%;
     display: flex;
-    justify-content: ;
     align-items: center;
     background-color: var(--darkgrey-);
     padding: 2rem;
     gap: 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem;    
 }
 .contact .container form input{
     width: 100%;
@@ -465,7 +508,7 @@ li{
 /* !----Footer section-----! */
 footer{
     background-color: var(--black-);
-    padding-top: 4rem;
+    padding: 1rem;
 }
 footer .container{
     display: flex;
@@ -483,10 +526,137 @@ footer .container .list h1{
     flex-direction: column;
     gap: 1rem;
 }
+.list li a:hover{
+    color: var(--white-);
+}
 .line{
-    height: 0.1px;
-    background-color: var(--white-);
+    height: 1px;
+    border-radius: 12px;
+    background-color: #898888;
+    margin-top: 2rem;
 }
 footer img{
     margin-top: 2rem;
+    padding-bottom: 1rem;
+}
+.logo-bottom{
+    width: 125px;
+}
+@media (max-width:840px) {
+    .navlinks{
+        display: none;
+    }
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero .container{
+        gap: 5rem;
+        padding-top: 6rem;
+    }
+    .hero .container .text{
+        align-items: center;
+    }
+    .hero .container .text h1{
+        text-align: center;
+        width: 100%;
+    }
+    .hero .container .text p{
+        width: 48%;
+        text-align: center;
+    }
+    .service .heading p{
+        width: 50%;
+    }
+    .service .container .items{
+        max-width: 550px;
+        height: 500px;
+        padding: 0 2rem;
+    }
+    .service .container .items{
+        margin-top:2rem  !important;
+    }
+    .features .heading{
+        width: 90%;
+    }
+    .features .container{
+        margin: 2rem 0;
+        gap: 2rem;
+    }
+    .features .container .list-1,
+    .features .container .list-1 li, 
+    .features .container .list-2,
+    .feedback .heading h1,
+    .feedback .heading p{
+        width: 100%;
+    }
+    .feedback .heading{
+        gap: 1rem;
+        padding: 0 2rem;
+    }
+
+@media (max-width:440px) {
+    .navlinks{
+        display: none;
+    }
+    .hero .container{
+        flex-wrap: wrap;
+        padding: 1rem;
+        gap: 3rem;
+    }
+    .hero .container .text{
+        align-items: center;
+        text-align: center;
+    }
+    .hero .container .text h1{
+        width: 100%;
+        font-size: 3rem;
+    }
+    .hero .container .text p, .service .heading p,  .hero .container .img img, .features .heading{
+        width: 100%;
+    }
+    .service .container, .features .container, .price .container{
+        flex-wrap: wrap;
+    }
+    .service .heading h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .service .container .items:first-child, .service .container .items:nth-child(3){
+        margin-top: 3rem;
+    }
+    .features .container .list-1 li{
+        width: 100%;
+    }
+    .features{
+        margin-top: 3rem;
+        padding: 1rem;
+    }
+    .features .heading, .price .heading, .contact .container .heading {
+        font-size: 2rem;
+    }
+    .features .container{
+        margin: 2rem 0;  
+        padding: 0;
+        gap: 4rem;  
+    }
+    .price .container{
+        margin-top: 6rem;
+    }
+    .feedback{
+        display: none;
+    }
+    .contact{
+        margin-top: 5rem;
+    }
+    .contact .container form{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    footer .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 1rem;
+    }
 }
