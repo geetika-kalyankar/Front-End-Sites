@@ -491,7 +491,8 @@ li{
     background-color: var(--darkgrey-);
     padding: 2rem;
     gap: 2rem;
-    border-radius: 1rem;    
+    border-radius: 1rem; 
+    margin: 2rem 0;  
 }
 .contact .container form input{
     width: 100%;
@@ -548,6 +549,8 @@ footer img{
     }
     .container{
         flex-wrap: wrap;
+    }
+    .service .container, .price .container{
         justify-content: center;
     }
     .hero .container{
@@ -594,6 +597,10 @@ footer img{
         gap: 1rem;
         padding: 0 2rem;
     }
+    .price .container .item{
+        width: 450px;
+    }
+}
 
 @media (max-width:440px) {
     .navlinks{
@@ -625,6 +632,9 @@ footer img{
     .service .container .items:first-child, .service .container .items:nth-child(3){
         margin-top: 3rem;
     }
+    .service .container .items{
+        height: 400px;
+    }
     .features .container .list-1 li{
         width: 100%;
     }
@@ -632,7 +642,7 @@ footer img{
         margin-top: 3rem;
         padding: 1rem;
     }
-    .features .heading, .price .heading, .contact .container .heading {
+   h1 {
         font-size: 2rem;
     }
     .features .container{
